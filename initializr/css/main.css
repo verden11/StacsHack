@@ -44,9 +44,9 @@
 	padding: 5px;
 }
 
-.greenTick{
+.tick{
 	max-width: 20px;
-	height: 20px;
+	max-height: 20px;
 }
 
 .jumbotron{
