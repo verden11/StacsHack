@@ -62,35 +62,34 @@
         <hr>
 
         <p>Please enter your <strong>surname</strong>:</p>
-        
-        <input type="text" name="UserName" size=35 maxlength=50 value="" placeholder="Last name" >
-        <img class="greenTick" src="img/greenTick.png" id="tc2" style="display:none; margin-left:-20px;">
+
+        <input type="text" name="UserName" size=35 maxlength=50 value="" placeholder="First name" id="var2" onchange="unhide('var2')">
+        <img class="tick" src="img/greenTick.png" id="tc2" style="display:none; margin-left:-20px;">
         <img class="tick" src="img/redx.png" id="tcx2" style="display:none; margin-left:-20px;">
 
         <hr>
 
+        <p>Please enter your <strong>Pref Name</strong>:</p>
 
-      
- 
+        <input type="text" name="UserName" size=35 maxlength=50 value="" placeholder="First name" id="var3" onchange="unhide('var3')">
+        <img class="tick" src="img/greenTick.png" id="tc3" style="display:none; margin-left:-20px;">
+        <img class="tick" src="img/redx.png" id="tcx3" style="display:none; margin-left:-20px;">
+
+        <hr>
+
+        <form action="action_page.php">
+          DOB:
+          <input type="date" name="bday">
+          <input type="submit">
+        </form>
+
+        <hr>
+        <form action="http://google.com">
+          <button type="submit" class="btn btn-success">Next!</button>
+        </form>
     </form>
-        <script>
-        function unhide(para){
-          var name = document.getElementById(para).value;
-          var l = name.length;
-          var num = para.slice(-1);
-          var tickMark = "tc" + num;
-          var xMark = "tcx" + num;
-          if (name.search(/[^A-Za-z\s]/) == -1 && l > 0) {
-             document.getElementById(tickMark).style.display = "";
-             document.getElementById(xMark).style.display = "none";
-          }else{  
-            document.getElementById(xMark).style.display = "";
-            document.getElementById(tickMark).style.display = "none";
-          }
-        }
-        </script>
 
-        </script>
+        
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
  
