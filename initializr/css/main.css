@@ -3,11 +3,25 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+ .jumbotron{
+ 	min-height: 500px;
+ }
 .container h1{
-	color:red;
-	font-size: 30px;
+	font-size: 3em;
+	padding-top: 100px;
+	width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.container p{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 
