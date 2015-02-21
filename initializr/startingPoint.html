@@ -55,13 +55,12 @@
       
         <p>Please enter your <strong>name</strong>:</p>
 
-
-        <input type="text" name="UserName" size=35 maxlength=50 value="" placeholder="First name" id="var1">
+        <input type="text" name="UserName" size=35 maxlength=50 value="" placeholder="First name" id="var1" onchange="unhide('var1')">
         <img class="greenTick" src="img/greenTick.png" id="tc1" style="display:none; margin-left:-20px;">
         <hr>
 
         <p>Please enter your <strong>surname</strong>:</p>
-        <input type="text" name="UserName" size=35 maxlength=50 value="" placeholder="Last name" onfocus="unhide('var1')">
+        <input type="text" name="UserName" size=35 maxlength=50 value="" placeholder="Last name">
         <img class="greenTick" src="img/greenTick.png" id="gt1" style="display:none;">
         <hr>
 
@@ -71,17 +70,17 @@
 
 
         <script>
-        function unhide(para,para2){
+        function unhide(para){
           var s = document.getElementById(para).value;
           var l = s.length;
           if (l>4) {
              document.getElementById('tc1').style.display = "";
              para.value=para.length;
           }else{
-
+			document.getElementById('tc1').style.display = "none";
 
           }
-        
+        }
         </script>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
