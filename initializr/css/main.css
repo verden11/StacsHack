@@ -3,8 +3,18 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+ 		html{
+			display: table;
+			margin: auto;
+		}
+		body{
+			vertical-align: middle;
+			display: table-cell;
+			}
+
  .jumbotron{
  	min-height: 500px;
+ 	margin-top: 40px;
  }
 .container h1{
 	font-size: 3em;
@@ -22,7 +32,22 @@
     margin-right: auto;
 }
 
+.formTable{
+	padding-top: 50px;
+}
 
+.question{
+	
+}
+.question p{
+	width: 100%;
+	padding: 5px;
+}
+
+.greenTick{
+	max-width: 20px;
+	height: 20px;
+}
 
 
 

@@ -36,7 +36,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Stacs Hack</a>
+          <a class="navbar-brand" href="index.html">Stacs Hack</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" role="form">
@@ -51,17 +51,44 @@
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
+    <form action="" method="POST" class="formTable">
+      
+        <p>Please enter your <strong>name</strong>:</p>
+
+
+        <input type="text" name="UserName" size=35 maxlength=50 value="" placeholder="First name" id="var1">
+        <img class="greenTick" src="img/greenTick.png" id="tc1" style="display:none; margin-left:-20px;">
+        <hr>
+
+        <p>Please enter your <strong>surname</strong>:</p>
+        <input type="text" name="UserName" size=35 maxlength=50 value="" placeholder="Last name" onfocus="unhide('var1')">
+        <img class="greenTick" src="img/greenTick.png" id="gt1" style="display:none;">
+        <hr>
+
+      
+ 
+    </form>
+
+
+        <script>
+        function unhide(para,para2){
+          var s = document.getElementById(para).value;
+          var l = s.length;
+          if (l>4) {
+
+             document.getElementById('tc1').style.display = "";
+             para.value=para.length;
+          }else{
+
+          };
+          
+         
+        }
+        
+        </script>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>We’re here, there, anywhere.</h1>
-        
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Get started &raquo;</a></p>
-      </div>
-    </div>
-
-    <div class="container">
+ 
       <!-- Example row of columns -->
 <!--       <div class="row">
         <div class="col-md-4">
