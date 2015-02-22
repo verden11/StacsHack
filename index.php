@@ -20,7 +20,7 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+		<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -61,42 +61,6 @@
 		</div>
 	</div>
 	</div>
-	
-	<?php/*
-	require 'Zebra_Database-master/Zebra_Database.php';
-
-$db = new Zebra_Database();
-
-// turn debugging on
-$db->debug = true;
-
-$db->connect('host', 'root', '', 'hack');
-
-// code goes here
-
-// this should always be present at the end of your scripts;
-// whether it should output anything should be controlled by the $debug property
-$db->show_debug_console();
-
-	//$conn = mysqli_connect("localhost","root","","hack");
-	// Check connection
-	if ($db->connect_error) {
-		die("Connection failed: " . $conn->connect_error);
-	} 
-
-	$sql = "SELECT * FROM ds";
-	$result = $db->query($sql);
-
-	if ($result->num_rows > 0) {
-		// output data of each row
-		while($row = $result->fetch_assoc()) {
-			echo "id: " . $row["login_id"]. " - Name: " . $row["pass"]. " " . $row["lastname"]. "<br>";
-		}
-	} else {
-		echo "0 results";
-	}
-	$db->close();*/
-	?>
 
     <div class="container">
       <!-- Example row of columns -->
