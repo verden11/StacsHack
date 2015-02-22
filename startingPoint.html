@@ -49,7 +49,7 @@
               <input type="password" placeholder="Password" class="form-control">
             </div>
             <button type="submit" class="btn btn-success">Sign in</button>
-            <button type="submit" class="btn btn-success">Sign up</button>
+            <button type="submit" class="btn btn-primary">Sign up</button>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
