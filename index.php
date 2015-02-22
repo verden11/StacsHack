@@ -123,7 +123,7 @@ $db->show_debug_console();
       <hr>
 
       <footer>
-        <p>&copy; Skill Finder© 2015</p>
+        <p>&copy; Skill Finder 2015</p>
       </footer>
 
         <script src="js/vendor/bootstrap.min.js"></script>
