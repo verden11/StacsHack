@@ -20,7 +20,7 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+		<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -55,6 +55,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
         <div class="container">
+<<<<<<< HEAD
       <h1>We’re here, there, anywhere.</h1>
         <div class="MainContainer"></div>
       <p><a class="btn btn-primary btn-lg" href="startingPoint.html" role="button">TRY IT NOW &raquo;</a></p>
@@ -97,6 +98,14 @@ $db->show_debug_console();
   }
   $db->close();
   ?>
+=======
+			<h1>We’re here, there, anywhere.</h1>
+				<div class="MainContainer"></div>
+			<p><a class="btn btn-primary btn-lg" href="startingPoint.html" role="button">TRY IT NOW &raquo;</a></p>
+		</div>
+	</div>
+	</div>
+>>>>>>> a2878f4b24073858682d19421d0db5e6ea6fb48d
 
     <div class="container">
       <!-- Example row of columns -->
