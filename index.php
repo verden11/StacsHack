@@ -55,7 +55,6 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
         <div class="container">
-<<<<<<< HEAD
       <h1>We’re here, there, anywhere.</h1>
         <div class="MainContainer"></div>
       <p><a class="btn btn-primary btn-lg" href="startingPoint.html" role="button">TRY IT NOW &raquo;</a></p>
@@ -98,14 +97,6 @@ $db->show_debug_console();
   }
   $db->close();
   ?>
-=======
-			<h1>We’re here, there, anywhere.</h1>
-				<div class="MainContainer"></div>
-			<p><a class="btn btn-primary btn-lg" href="startingPoint.html" role="button">TRY IT NOW &raquo;</a></p>
-		</div>
-	</div>
-	</div>
->>>>>>> a2878f4b24073858682d19421d0db5e6ea6fb48d
 
     <div class="container">
       <!-- Example row of columns -->
