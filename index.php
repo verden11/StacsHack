@@ -87,7 +87,7 @@ $db->show_debug_console();
     die("Connection failed: " . $conn->connect_error);
   } 
 
-  $sql = "SELECT * FROM ds";
+  $sql = "SELECT * FROM accounts";
   $result = $db->query($sql);
 
   if ($result->num_rows > 0) {
