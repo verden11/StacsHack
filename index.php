@@ -62,7 +62,7 @@
 	</div>
 	</div>
 	
-	<?php
+	<?php/*
 	require 'Zebra_Database-master/Zebra_Database.php';
 
 $db = new Zebra_Database();
@@ -95,7 +95,7 @@ $db->show_debug_console();
 	} else {
 		echo "0 results";
 	}
-	$db->close();
+	$db->close();*/
 	?>
 
     <div class="container">
