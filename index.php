@@ -36,7 +36,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Stacs Hack</a>
+          <a class="navbar-brand" href="index.php">Stacs Hack</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" role="form">
@@ -53,24 +53,24 @@
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-	<div class="jumbotron">
+  <div class="jumbotron">
         <div class="container">
-			<h1>We’re here, there, anywhere.</h1>
-				<div class="MainContainer"></div>
-			<p><a class="btn btn-primary btn-lg" href="startingPoint.html" role="button">TRY IT NOW &raquo;</a></p>
-		</div>
-	</div>
-	</div>
-	
-	<?php
-	require 'Zebra_Database-master/Zebra_Database.php';
+      <h1>We’re here, there, anywhere.</h1>
+        <div class="MainContainer"></div>
+      <p><a class="btn btn-primary btn-lg" href="startingPoint.html" role="button">TRY IT NOW &raquo;</a></p>
+    </div>
+  </div>
+  </div>
+  
+  <?php
+  require 'Zebra_Database-master/Zebra_Database.php';
 
 $db = new Zebra_Database();
 
 // turn debugging on
 $db->debug = true;
 
-$db->connect('host', 'root', '', 'hack');
+$db->connect('sql3.freesqldatabase.com', 'sql368307', 'aM5*iW8!', 'sql368307');
 
 // code goes here
 
@@ -78,25 +78,25 @@ $db->connect('host', 'root', '', 'hack');
 // whether it should output anything should be controlled by the $debug property
 $db->show_debug_console();
 
-	//$conn = mysqli_connect("localhost","root","","hack");
-	// Check connection
-	if ($db->connect_error) {
-		die("Connection failed: " . $conn->connect_error);
-	} 
+  //$conn = mysqli_connect("localhost","root","","hack");
+  // Check connection
+  if ($db->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  } 
 
-	$sql = "SELECT * FROM ds";
-	$result = $db->query($sql);
+  $sql = "SELECT * FROM ds";
+  $result = $db->query($sql);
 
-	if ($result->num_rows > 0) {
-		// output data of each row
-		while($row = $result->fetch_assoc()) {
-			echo "id: " . $row["login_id"]. " - Name: " . $row["pass"]. " " . $row["lastname"]. "<br>";
-		}
-	} else {
-		echo "0 results";
-	}
-	$db->close();
-	?>
+  if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+      echo "id: " . $row["name"]. " - Name: " . $row["surname"]. " " . $row["lastname"]. "<br>";
+    }
+  } else {
+    echo "0 results";
+  }
+  $db->close();
+  ?>
 
     <div class="container">
       <!-- Example row of columns -->
