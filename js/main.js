@@ -43,3 +43,18 @@ function passStr(para,para2){
             document.getElementById(tickMark).style.display = "none";
           }
 }
+
+function checkNoNull(){
+  var a = document.getElementById('var1').value.length > 0;
+  var b = document.getElementById('var2').value.length > 0;
+  var c = document.getElementById('var3').value.length > 0;
+  var d = document.getElementById('var4').value.length > 0;
+  var e = document.getElementById('var5').value.length > 0;
+  if (a && b && c && d && e){
+    window.location='step2.html';
+  }else{
+    alert("Please fill all the fields!");
+  }
+
+}
+
