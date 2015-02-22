@@ -59,7 +59,7 @@
       
         <p>Please enter your <strong>Name</strong>:</p>
 
-        <input type="text" name="UserName" size=35 maxlength=50 value="" placeholder=" First name" id="var1" onchange="unhide('var1')">
+        <input type="text" name="Name" size=35 maxlength=50 value="" placeholder=" First name" id="var1" onchange="unhide('var1')">
         <img class="tick" src="img/greenTick.png" id="tc1" style="display:none; margin-left:-20px;">
         <img class="tick" src="img/redx.png" id="tcx1" style="display:none; margin-left:-20px;">
 
@@ -67,7 +67,7 @@
 
         <p>Please enter your <strong>Surname</strong>:</p>
 
-        <input type="text" name="UserName" size=35 maxlength=50 value="" placeholder=" Surname" id="var2" onchange="unhide('var2')">
+        <input type="text" name="Surname" size=35 maxlength=50 value="" placeholder=" Surname" id="var2" onchange="unhide('var2')">
         <img class="tick" src="img/greenTick.png" id="tc2" style="display:none; margin-left:-20px;">
         <img class="tick" src="img/redx.png" id="tcx2" style="display:none; margin-left:-20px;">
 
@@ -75,19 +75,19 @@
 
         <p>Please enter your <strong>Username</strong>:</p>
 
-        <input type="text" name="UserName" size=35 maxlength=50 value="" placeholder=" Username" id="var3" onchange="unhide('var3')">
+        <input type="text" name="Username" size=35 maxlength=50 value="" placeholder=" Username" id="var3" onchange="unhide('var3')">
         <img class="tick" src="img/greenTick.png" id="tc3" style="display:none; margin-left:-20px;">
         <img class="tick" src="img/redx.png" id="tcx3" style="display:none; margin-left:-20px;">
 
         <hr>
 		
 		<p>Please enter your <strong>Password</strong><img class="demo-basic" src="img/question.png" width="12" height="12"/>:</p>
-        <input type="password" name="UserName" size=35 maxlength=50 value="" placeholder=" Password" id="var4">
+        <input type="password" name="Password" size=35 maxlength=50 value="" placeholder=" Password" id="var4">
         <hr>
 
         <p>Please <strong> Repeat Password</strong><img class="demo-basic" src="img/question.png" width="12" height="12"/>:</p>
 
-        <input type="password" name="UserName" size=35 maxlength=50 value="" placeholder=" Password" id="var5" onchange="passStr('var5','var4')">
+        <input type="password" name="Password2" size=35 maxlength=50 value="" placeholder=" Password" id="var5" onchange="passStr('var5','var4')">
         <img class="tick" src="img/greenTick.png" id="tc5" style="display:none; margin-left:-20px;">
         <img class="tick" src="img/redx.png" id="tcx5" style="display:none; margin-left:-20px;">
 
@@ -101,7 +101,27 @@
         <form method="link" action="step2.html">
           <button type="submit" class="btn btn-success">Next!</button>
         </form>
+	<?php
+  /*require 'Zebra_Database-master/Zebra_Database.php';
 
+$db = new Zebra_Database();
+
+$db->debug = true;
+
+$db->connect('sql3.freesqldatabase.com', 'sql368307', 'aM5*iW8!', 'sql368307');
+
+$db->show_debug_console();
+
+/*  if ($db->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  } 
+
+  $sql = "SELECT * FROM ds";
+  $result = $db->query($sql);*/
+  echo "Hello " . %_POST["Username"] . " :P";
+
+  ?>
+	
       <hr>
 
       <footer>
