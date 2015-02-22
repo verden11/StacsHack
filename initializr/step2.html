@@ -50,68 +50,56 @@
           </form>
         </div><!--/.navbar-collapse -->
       </div>
-    </nav>
-    <form action="" method="POST" class="formTable">
-      
-        <p>Please enter your <strong>name</strong>:</p>
+    </nav>        
 
-        <input type="text" name="UserName" size=35 maxlength=50 value="" placeholder="First name" id="var1" onchange="unhide('var1')">
-        <img class="tick" src="img/greenTick.png" id="tc1" style="display:none; margin-left:-20px;">
-        <img class="tick" src="img/redx.png" id="tcx1" style="display:none; margin-left:-20px;">
-
-        <hr>
-
-        <p>Please enter your <strong>surname</strong>:</p>
-
-        <input type="text" name="UserName" size=35 maxlength=50 value="" placeholder="First name" id="var2" onchange="unhide('var2')">
-        <img class="tick" src="img/greenTick.png" id="tc2" style="display:none; margin-left:-20px;">
-        <img class="tick" src="img/redx.png" id="tcx2" style="display:none; margin-left:-20px;">
-
-        <hr>
-
-        <p>Please enter your <strong>Pref Name</strong>:</p>
-
-        <input type="text" name="UserName" size=35 maxlength=50 value="" placeholder="First name" id="var3" onchange="unhide('var3')">
-        <img class="tick" src="img/greenTick.png" id="tc3" style="display:none; margin-left:-20px;">
-        <img class="tick" src="img/redx.png" id="tcx3" style="display:none; margin-left:-20px;">
-
-        <hr>
-
-        <form action="action_page.php">
-          DOB:
-          <input type="date" name="bday">
-          <input type="submit">
-        </form>
-
-        <hr>
-        <form action="step2.html">
-          <button type="submit" class="btn btn-success">Next!</button>
-        </form>
-    </form>
+    <div id="listOfLangs">
+      <div id="setOfLangs" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">Java</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="31" class="pLang">C</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag3" width="88" height="31" class="pLang">C++</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">Objective-C</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">C#</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">JavaScript</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">PHP</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">Python</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">Visual Basic .NET</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">Visual Basic</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">Visual Basic</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">Perl</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">PL/SQL</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">F#</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">Transact-SQL</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">ABAP</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">MATHLAB</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">R</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">Pascal</p>
+        <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31" class="pLang">Ruby</p>
 
         
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
+        
+        
+        
+        <p id="bot_info">+++ I am goot at it <br>+ I know it<br>---I do not like it!<br>Drag&Drop</p>
+      </div>
+    </div>
  
       <!-- Example row of columns -->
-<!--       <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+      <div class="row">
+        <div class="col-md-4" ondrop="drop(event)" ondragover="allowDrop(event)">
+          +++
+          
+          
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-md-4" ondrop="drop(event)" ondragover="allowDrop(event)">
+          +
+          
        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-md-4" ondrop="drop(event)" ondragover="allowDrop(event)">
+          ---
         </div>
-      </div> -->
-
+      </div>
+      
       <hr>
 
       <footer>

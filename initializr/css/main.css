@@ -1,5 +1,3 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -52,3 +50,52 @@
 .jumbotron{
 	background-repeat: no-repeat;
 }
+
+
+#listOfLangs{
+	width: 1000px;
+	min-height: 200px;
+	position: relative;
+}
+
+.col-md-4 {
+	margin-bottom: 200px;
+	min-height: 450px;
+	border: 1px dashed black; 
+
+}
+
+.col-md-4 .pLang{
+	padding: 10px 0 10px 5px;
+}
+
+#setOfLangs p{
+	float: left;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid red;
+	text-align: center;
+
+
+}
+#setOfLangs{
+	width: 100%;
+	margin-top: 20px;
+}
+
+#setOfLangs p:not(:first-child):not(:last-child) {
+	display: none;
+}
+
+
+#bot_info{
+	position:absolute;
+	bottom:0;
+	left:0; 
+	display:block; 
+	text-align:center;
+	border-width: 0;
+	border-style: none;
+	width: 100%;
+}
+
