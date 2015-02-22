@@ -53,49 +53,67 @@
 
 
 #listOfLangs{
+	margin-top: 20px;
 	width: 1000px;
 	min-height: 200px;
 	position: relative;
+	background-image: url("../img/prog-languages.png");
 }
 
 .col-md-4 {
-	margin-bottom: 200px;
+	margin-bottom: 50px;
 	min-height: 450px;
-	border: 1px dashed black; 
+	border-right: 1px solid black; 
+	padding: 0;
 
 }
 
 .col-md-4 .pLang{
-	padding: 10px 0 10px 5px;
+	margin: 10px 0 10px 5px;
+	text-decoration: underline;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
 }
 
 #setOfLangs p{
 	float: left;
-	padding: 5px;
+	padding: 10px;
 	margin: 5px;
-	border: 1px solid red;
+	border: 5px solid red;
 	text-align: center;
+	font-size: 1.8em;
+	font-weight: 900;
+	float: left;
+
 
 
 }
 #setOfLangs{
-	width: 100%;
 	margin-top: 20px;
+	margin-left: auto;
+    margin-right: auto;
+    width: 5%;
 }
 
-#setOfLangs p:not(:first-child):not(:last-child) {
+#setOfLangs p:not(:first-child){
 	display: none;
 }
 
 
 #bot_info{
-	position:absolute;
-	bottom:0;
-	left:0; 
-	display:block; 
 	text-align:center;
-	border-width: 0;
-	border-style: none;
-	width: 100%;
+	width: 101%;
+	font-size: 1em;
+	font-size:1em;
+	border-top: 2px solid green;
+	
 }
 
+.colOfLangs{
+	border-top: 1px solid black;
+	border-bottom: 1px solid green;
+	text-align: center;
+	color: #782EE6;
+	font-size: 1.5em;
+}
